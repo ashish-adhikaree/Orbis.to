@@ -1,48 +1,50 @@
-import Image from 'next/image'
-import freshbooks from '../../../public/logos/freshbooks.svg'
-import sendgrid from '../../../public/logos/sendgrid.svg'
-import layers from '../../../public/logos/layers.svg'
-import adobe from '../../../public/logos/adobe.svg'
+import Image from "next/image";
+import fapesp from "../../../public/logos/fapesp-img.jpg";
+import fluminense from "../../../public/logos/fluminense.svg";
+import macae from "../../../public/logos/logo-padrao.png";
+import startupBrazil from "../../../public/logos/startupbrazil.webp";
+import Link from "next/link";
 
 const logos = [
     {
-        src: freshbooks,
-        alt: "freshbooks"
+        src: fapesp,
+        alt: "Fapesp",
+        websiteUrl: "https://fapesp.br",
     },
     {
-        src: sendgrid,
-        alt: "sendgrid"
+        src: fluminense,
+        alt: "Fluminense",
+        websiteUrl: "https://www.fluminense.com.br/site/",
     },
     {
-        src: layers,
-        alt: "layers"
+        src: startupBrazil,
+        alt: "Startup Brazil",
+        websiteUrl: "https://www.startupbrasil.org.br",
     },
     {
-        src: adobe,
-        alt: "adobe"
+        src: macae,
+        alt: "Macae",
+        websiteUrl: "https://macae.rj.gov.br/cidade/conteudo/titulo/capital-nacional-do-petroleo",
     },
-]
-
+];
 
 const LogoGrid = () => (
     <div>
         <div className="custom-screen">
-            <h2 className="font-semibold text-sm text-gray-600 text-center">
-                TRUSTED BY TEAMS FROM AROUND THE WORLD
-            </h2>
+            <h2 className="font-semibold text-sm text-gray-600 text-center">CONFIADO POR EQUIPES DE TODO O MUNDO</h2>
             <div className="mt-6">
                 <ul className="flex gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-16">
-                    {
-                        logos.map((item, idx) => (
-                            <li key={idx}>
-                                <Image src={item.src} alt={item.alt} />
-                            </li>
-                        ))
-                    }
+                    {logos.map((item, idx) => (
+                        <li key={idx}>
+                            <Link href={item.websiteUrl} target="_blank">
+                                <Image height={50} src={item.src} alt={item.alt} />
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
     </div>
-)
+);
 
-export default LogoGrid
+export default LogoGrid;

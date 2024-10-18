@@ -1,38 +1,37 @@
 import { Cloudy, Code, Globe, Layout, Lightbulb, Smartphone } from "lucide-react";
 import SectionWrapper from "../../SectionWrapper";
-import Image from "next/image";
 
 const ToolKit = () => {
     const features = [
         {
             icon: Code,
-            title: "Custom Software Development",
-            desc: "Tailored solutions designed to meet your specific business needs, ensuring efficiency and effectiveness in every application.",
+            title: "Desenvolvimento de software personalizado",
+            desc: "Soluções personalizadas projetadas para atender às necessidades específicas do seu negócio, garantindo eficiência e eficácia em cada aplicação.",
         },
         {
             icon: Globe,
-            title: "Web Development",
-            desc: "Create stunning, responsive websites that engage users and enhance your online presence, using the latest technologies and design practices.",
+            title: "Desenvolvimento Web",
+            desc: "Crie sites impressionantes e responsivos que envolvam os usuários e aprimorem sua presença online, usando as mais recentes tecnologias e práticas de design.",
         },
         {
             icon: Smartphone,
-            title: "Mobile App Development",
-            desc: "Develop intuitive and user-friendly mobile applications for iOS and Android, helping you reach your customers anytime, anywhere.",
+            title: "Desenvolvimento de aplicativos móveis",
+            desc: "Desenvolva aplicativos móveis intuitivos e fáceis de usar para iOS e Android, ajudando você a alcançar seus clientes a qualquer hora e em qualquer lugar.",
         },
         {
             icon: Cloudy,
-            title: "Cloud Solutions",
-            desc: "Leverage scalable cloud services to improve performance, flexibility, and security, allowing your business to adapt to changing demands.",
+            title: "Soluções em cloud",
+            desc: "Aproveite serviços de cloud escalonáveis para melhorar o desempenho, a flexibilidade e a segurança, permitindo que sua empresa se adapte às demandas em constante mudança.",
         },
         {
             icon: Layout,
-            title: "UI/UX Design",
-            desc: "Focus on creating seamless and engaging user experiences with intuitive interfaces that enhance customer satisfaction and drive conversions.",
+            title: "Design de UI/UX",
+            desc: "Concentre-se na criação de experiências de usuário integradas e envolventes com interfaces intuitivas que aumentam a satisfação do cliente e geram conversões.",
         },
         {
             icon: Lightbulb,
-            title: "Tech Consulting",
-            desc: "Benefit from expert guidance on technology strategy and implementation, ensuring your projects align with industry best practices and future trends.",
+            title: "Consultoria Técnica",
+            desc: "Beneficie-se de orientação especializada sobre estratégia e implementação de tecnologia, garantindo que seus projetos estejam alinhados com as melhores práticas do setor e tendências futuras.",
         },
     ];
 
@@ -40,7 +39,7 @@ const ToolKit = () => {
         <SectionWrapper>
             <div id="services" className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-2xl mx-auto space-y-3 sm:text-center">
-                    <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">Our Services</h2>
+                    <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">Nossos serviços</h2>
                     <p>
                         We empower your business with tailored tech solutions, including custom software, web and mobile
                         apps, cloud services, and user-centric design.

@@ -5,18 +5,18 @@ const Features = () => {
     const features = [
         {
             icon: <Star />,
-            title: "Expertise in Diverse Technologies",
-            desc: "Our team is proficient in a wide range of technologies, ensuring that we can deliver the best solutions tailored to your specific needs, no matter the complexity.",
+            title: "Expertise em diversas tecnologias",
+            desc: "Nossa equipe é proficiente em uma ampla gama de tecnologias, garantindo que possamos entregar as melhores soluções adaptadas às suas necessidades específicas, independentemente da complexidade.",
         },
         {
             icon: <Clock />,
-            title: "Agile Development Approach",
-            desc: "We employ an agile development methodology, allowing for flexibility and rapid iterations, ensuring your project stays on track and adapts to changes efficiently.",
+            title: "Abordagem de Desenvolvimento Ágil",
+            desc: "Empregamos uma metodologia de desenvolvimento ágil, permitindo flexibilidade e iterações rápidas, garantindo que seu projeto permaneça no caminho certo e se adapte às mudanças de forma eficiente.",
         },
         {
             icon: <Users />,
-            title: "Client-Centric Focus",
-            desc: "Our commitment to understanding your business and collaborating closely with you guarantees that we create solutions that truly align with your goals.",
+            title: "Foco Centrado no Cliente",
+            desc: "Nosso compromisso em compreender o seu negócio e colaborar estreitamente com você garante que criamos soluções que realmente se alinham aos seus objetivos.",
         },
     ];
 
