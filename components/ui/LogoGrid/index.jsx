@@ -18,6 +18,7 @@ import mtcriativo from "../../../public/logos/mtcriativo.jpg"
 import startupmacae from "../../../public/logos/startupmacae.jpg"
 import orbis from "../../../public/logos/orbis.jpg";
 import musicx from "../../../public/logos/musicx.jpg";
+import votechat from "../../../public/logos/votechat.jpg";
 
 import Link from "next/link";
 
@@ -116,6 +117,11 @@ const logos = [
         src: musicx,
         alt: "Musicx",
         websiteUrl: "https://web.archive.org/web/20110902084056/http://www.musicx.fm/home/ "
+    },
+    {
+        src: votechat,
+        alt: "Votechat",
+        websiteUrl: "https://web.archive.org/web/20140706054023/http://www.votechat.me/"
     }
 ];
 
