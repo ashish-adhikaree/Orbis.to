@@ -3,23 +3,23 @@ import fapesp from "../../../public/logos/fapesp-img.jpg";
 import fluminense from "../../../public/logos/fluminense.svg";
 import macae from "../../../public/logos/logo-padrao.png";
 import startupBrazil from "../../../public/logos/startupbrazil.webp";
-import ortobom from "../../../public/logos/ortobom.jpg"
-import clicklabs from "../../../public/logos/clicklabs.jpg"
-import easytaxi from "../../../public/logos/easytaxi.jpg"
-import eht from "../../../public/logos/eht.jpg"
-import faperj from "../../../public/logos/faperj.jpg"
-import friendsaround from "../../../public/logos/friendsaround.jpg"
-import goingsolo from "../../../public/logos/goingsolo.jpg"
-import golgroup from "../../../public/logos/golgroup.jpg"
-import ictbid from "../../../public/logos/ictbid.jpg"
-import ltv from "../../../public/logos/ltv.jpg"
-import medvelox from "../../../public/logos/medvelox.jpg"
-import mtcriativo from "../../../public/logos/mtcriativo.jpg"
-import startupmacae from "../../../public/logos/startupmacae.jpg"
+import ortobom from "../../../public/logos/ortobom.jpg";
+import clicklabs from "../../../public/logos/clicklabs.jpg";
+import easytaxi from "../../../public/logos/easytaxi.jpg";
+import eht from "../../../public/logos/eht.jpg";
+import faperj from "../../../public/logos/faperj.jpg";
+import friendsaround from "../../../public/logos/friendsaround.jpg";
+import goingsolo from "../../../public/logos/goingsolo.jpg";
+import golgroup from "../../../public/logos/golgroup.jpg";
+import ictbid from "../../../public/logos/ictbid.jpg";
+import ltv from "../../../public/logos/ltv.jpg";
+import medvelox from "../../../public/logos/medvelox.jpg";
+import mtcriativo from "../../../public/logos/mtcriativo.jpg";
+import startupmacae from "../../../public/logos/startupmacae.jpg";
 import orbis from "../../../public/logos/orbis.jpg";
 import musicx from "../../../public/logos/musicx.jpg";
 import votechat from "../../../public/logos/votechat.jpg";
-
+import techsamurai from "../../../public/logos/techsamurai.jpg";
 import Link from "next/link";
 
 const logos = [
@@ -81,12 +81,12 @@ const logos = [
     {
         src: startupmacae,
         alt: "Startup Macae",
-        websiteUrl: "https://www.macae.rj.gov.br/semed/conteudo/titulo/startup-macae "
+        websiteUrl: "https://www.macae.rj.gov.br/semed/conteudo/titulo/startup-macae ",
     },
     {
         src: goingsolo,
         alt: "Going Solo",
-        websiteUrl: "https://goingsolo.app"
+        websiteUrl: "https://goingsolo.app",
     },
     {
         src: clicklabs,
@@ -101,28 +101,33 @@ const logos = [
     {
         src: golgroup,
         alt: "Gol Group",
-        websiteUrl: "https://web.archive.org/web/20170507100138/http://www.golgrupo.com.br/Inicial.html"
+        websiteUrl: "https://web.archive.org/web/20170507100138/http://www.golgrupo.com.br/Inicial.html",
     },
     {
         src: ltv,
         alt: "LTV SaaS Fund",
-        websiteUrl: "https://ltv.fund"
+        websiteUrl: "https://ltv.fund",
     },
     {
         src: mtcriativo,
         alt: "MT Criativo",
-        websiteUrl: "https://www.mtcriativo.mt.gov.br/index.php/mtcriativo/"
+        websiteUrl: "https://www.mtcriativo.mt.gov.br/index.php/mtcriativo/",
     },
     {
         src: musicx,
         alt: "Musicx",
-        websiteUrl: "https://web.archive.org/web/20110902084056/http://www.musicx.fm/home/ "
+        websiteUrl: "https://web.archive.org/web/20110902084056/http://www.musicx.fm/home/ ",
     },
     {
         src: votechat,
         alt: "Votechat",
-        websiteUrl: "https://web.archive.org/web/20140706054023/http://www.votechat.me/"
-    }
+        websiteUrl: "https://web.archive.org/web/20140706054023/http://www.votechat.me/",
+    },
+    {
+        src: techsamurai,
+        alt: "Tech Samurai",
+        websiteUrl: "https://techsamurai.com.br",
+    },
 ];
 
 const LogoGrid = () => (
@@ -134,7 +139,12 @@ const LogoGrid = () => (
                     {logos.map((item, idx) => (
                         <li key={idx}>
                             <Link href={item.websiteUrl} target="_blank">
-                                <Image className={`rounded-md ${item.alt == "Macae" ? "bg-gray-500" : ""}`} height={50} src={item.src} alt={item.alt} />
+                                <Image
+                                    className={`rounded-md ${item.alt == "Macae" ? "bg-gray-500" : ""}`}
+                                    height={50}
+                                    src={item.src}
+                                    alt={item.alt}
+                                />
                             </Link>
                         </li>
                     ))}
