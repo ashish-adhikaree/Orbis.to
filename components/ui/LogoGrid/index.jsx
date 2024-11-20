@@ -17,6 +17,7 @@ import medvelox from "../../../public/logos/medvelox.jpg"
 import mtcriativo from "../../../public/logos/mtcriativo.jpg"
 import startupmacae from "../../../public/logos/startupmacae.jpg"
 import orbis from "../../../public/logos/orbis.jpg";
+import musicx from "../../../public/logos/musicx.jpg";
 
 import Link from "next/link";
 
@@ -110,6 +111,11 @@ const logos = [
         src: mtcriativo,
         alt: "MT Criativo",
         websiteUrl: "https://www.mtcriativo.mt.gov.br/index.php/mtcriativo/"
+    },
+    {
+        src: musicx,
+        alt: "Musicx",
+        websiteUrl: "https://web.archive.org/web/20110902084056/http://www.musicx.fm/home/ "
     }
 ];
 
